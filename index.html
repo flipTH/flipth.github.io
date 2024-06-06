@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StartShoes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        
+        <img src="logo.jpg" alt="StartShoes Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Loja</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="shop-title">
+            <h2>StartShoes</h2>
+        </section>
+
+        <section id="home" class="hero">
+            <h1>Bem-vindo à StartShoes</h1>
+            <p>Os melhores sapatos para o seu estilo.</p>
+        </section>
+        <section id="welcome-message">
+            <h1>Bem-vindo à nossa loja!</h1>
+            <p>Descubra nossa coleção exclusiva de sapatos que combinam estilo e conforto.</p>
+        </section>
+        <section id="carousel" class="carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="slide1.jpg" alt="Slide 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="slide2.jpg" alt="Slide 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="slide3.jpg" alt="Slide 3">
+                </div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </section>
+        <section id="shop" class="products">
+            <h2>Nossos Produtos</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="shoe1.jpg" alt="Shoe 1">
+                    <h3>Sapato 1</h3>
+                    <p>R$ 199,99</p>
+                </div>
+                <div class="product-card">
+                    <img src="shoe2.jpg" alt="Shoe 2">
+                    <h3>Sapato 2</h3>
+                    <p>R$ 299,99</p>
+                </div>
+                <!-- Adicione mais produtos conforme necessário -->
+            </div>
+        </section>
+        <section id="about" class="about">
+            <h2>Sobre Nós</h2>
+            <p>StartShoes é dedicada a trazer o melhor em sapatos modernos e confortáveis.</p>
+        </section>
+       <section id="contact" class="contact">
+            <h2>Contato</h2>
+            <form id="contact-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="form-message" class="hidden">
+                <p>Obrigado pelo seu interesse! Infelizmente, nós não somos uma loja real, e isso foi somente criado para um trabalho. Espero que entenda!</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 StartShoes. Todos os direitos reservados.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
